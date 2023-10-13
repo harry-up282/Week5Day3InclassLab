@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Whisker wonder Pet adoption Agency</title>
+
+    <link rel="stylesheet" href="design.css" />
+     
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    />
+    
+   
+    <!-- Add Fancybox JavaScript -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script> -->
+    
+    
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@1,700&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+   
+    <style>
+      #album  img {
+        width: 420px;
+        height: 400px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header section-->
+    <header>
+      <h2>Whisker Wonder's</h2>
+
+      <!-- Navbar section -->
+      <nav>
+        <a href="index.html">Home</a>
+
+        <a href="#about">About</a>
+
+        <a href="findapet.html">Find A Pet</a>
+
+        <a href="page2.html">How it works</a>
+
+        <a href="contact.html">Contact</a>
+
+        <a href="gallery.html">Gallery</a>
+      </nav>
+    </header>
+    <main>
+      <h1><u>Pet Images</u></h1>
+      <!-- <ul id="album">
+  <li class="photo">
+    <a href="imagess/pet-1.jpg" data-fancybox="pet-gallery" data-caption="Mr. Whiskerson">
+      <img src="imagess/pet-1.jpg" class="imageOne" />
+    </a>
+  </li>
+  
+</ul>
+-->
+
+      <ul id="album">
+        <li class="photo">
+          <a href="imagess/pet-1.jpg" data-fancybox="pet-gallery" data-caption="Mr. Whiskerson" > 
+          <img src="imagess/pet-1.jpg" class="imageOne">
+          <!-- <p class="imgdescription">Mr. Whiskerson</p> -->
+        </a>
+        </li>
+        <div class="caption"></div>
+
+        <li class="photo">
+          <a href="imagess/pet-2.jpg" data-fancybox="pet-gallery" data-caption="Lary, Tom, Bruno, & Brownie">
+          <img src="imagess/pet-2.jpg" class="imageOne">  
+          <!-- <p class="imgdescription">Lary, Tom, Bruno, & Brownie</p> -->
+        </a>
+        </li>
+        <div class="caption"></div>
+
+        <li class="photo">
+          <a href="imagess/pet-3.jpg" data-fancybox="pet-gallery" data-caption="Judy">
+          <img src="imagess/pet-3.jpg" class="imageOne"> 
+          <!-- <p class="imgdescription">Judy</p> -->
+        </a>
+        </li>
+        <div class="caption"></div>
+
+        <li class="photo">
+          <a href="imagess/pet-4.jpg" data-fancybox="pet-gallery" data-caption="Danny">
+          <img src="imagess/pet-4.jpg" class="imageOne"> 
+          <!-- <p class="imgdescription">Danny</p> -->
+        </a>
+        </li>
+        <div class="caption"></div>
+
+        <li class="photo">
+          <a href="imagess/pet-5.jpg"data-fancybox="pet-gallery" data-caption="pet">
+          <img src="imagess/pet-5.jpg" class="imageOne">  
+          <!-- <p class="imgdescription">Pet</p> -->
+        </a>
+        </li>
+        <div class="caption"></div>
+
+        <li class="photo">
+          <a href="imagess/pet-6.jpg" data-fancybox="pet-gallery" data-caption="Bunny">
+          <img src="imagess/pet-6.jpg" class="imageOne"> 
+          <!-- <p class="imgdescription">Bunny</p> -->
+        </a>
+        </li>
+        <div class="caption"></div>
+
+        <li class="photo">
+          <a href="imagess/pet-7.jpg" data-fancybox="pet-gallery" data-caption="Mr. cuckatoo">
+          <img src="imagess/pet-7.jpg" class="imageOne"> 
+          <!-- <p class="imgdescription">Mr. cuckatoo</p> -->
+        </a>
+        </li>
+        <div class="caption"></div>
+
+        <li class="photo">
+          <a href="imagess/pet-8.jpg" data-fancybox="pet-gallery" data-caption="Mr. Playboy">
+          <img src="imagess/pet-8.jpg" class="imageOne">  
+          <!-- <p class="imgdescription">Mr. Playboy</p> -->
+        </a>
+        </li>
+        <div class="caption"></div>
+
+        <li class="photo">
+          <a href="imagess/pet-9.jpg" data-fancybox="pet-gallery" data-caption="Scooby">
+          <img src="imagess/pet-9.jpg" class="imageOne">
+          <!-- <p class="imgdescription">Scooby</p> -->
+        </a>
+        </li>
+        <div class="caption"></div>
+
+        <li class="photo">
+          <a href="imagess/pet-10.jpg" data-fancybox="pet-gallery" data-caption="Barkley" >
+          <img src="imagess/pet-10.jpg" class="imageOne">
+          <!-- <p class="imgdescription">Barkley</p> -->
+        </a>
+        </li>
+        <div class="caption"></div>
+      </ul>
+    </main>
+   
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+     <script>
+      $(document).ready(function() {
+      $('[data-fancybox="pet-gallery"]').fancybox();
+    });
+     </script> 
+    <script>
+      jQuery.noConflict();
+    </script> 
+   <!-- <script src="js/site_script.js"></script> -->
+
+  </body>
+  </body>
+  
+</html>
